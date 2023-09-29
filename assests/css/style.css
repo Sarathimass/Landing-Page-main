@@ -1,0 +1,215 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Ysabeau SC", sans-serif;
+}
+/* START HEADER */
+header {
+	padding: 15px 10%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: transparent;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-right: auto;
+}
+li,
+a,
+button {
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+}
+nav ul li {
+	display: inline;
+	padding: 0px 20px;
+	padding-right: 50px;
+}
+nav ul li a {
+	transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+	color: #7fff00;
+	font-size: 20px;
+	font-weight: bolder;
+	transition: all 0.3s ease 0s;
+}
+header > button {
+	padding: 9px 25px;
+	background-color: rgb(18, 235, 11);
+	border-radius: 15px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease 0s;
+}
+header > button:hover {
+	background-color: #500eeb;
+}
+.navbar-fixed {
+	position: fixed;
+	top: -1;
+	left: 0;
+	right: 0;
+	width: 100;
+	background: rgb(64, 63, 63);
+	background: radial-gradient(
+		circle,
+		rgba(64, 63, 63, 1) 0%,
+		rgba(21, 21, 22, 1) 100%
+	);
+	box-shadow: 1px 1px 2px 0 #aca8a8;
+}
+/* END HEADER */
+
+/*  START WRAPPER */
+.wrapper {
+	background: url(../images/BG-IMAGE-UM-1.jpg) no-repeat center center / cover;
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+.wrapper:before {
+	position: absolute;
+	content: "";
+	background-image: linear-gradient(
+		to right,
+		rgba(44, 44, 46, 0.95),
+		rgba(8, 8, 8, 0.95),
+		rgba(37, 36, 41, 0.9),
+		rgba(20, 20, 20, 0.85),
+		rgba(56, 3, 8, 0.95)
+	);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+/*  END WRAPPER */
+
+/* START CONTENT */
+.content {
+	display: flex;
+	padding: 80px 10px;
+	justify-content: space-between;
+	color: #fff;
+}
+.content > img {
+	width: 100%;
+	height: 500px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.content > img:hover {
+	box-shadow: 0 0 5px rgb(27, 1, 18), 0 0 25px rgb(8, 0, 7),
+		0 0 50px rgb(54, 44, 50), 0 0 100px rgb(32, 32, 32),
+		0 0 200px rgb(39, 38, 39);
+	transition: all 0.3s ease 0s;
+}
+.hero-info h3 {
+	font-size: 25px;
+}
+.hero-info p {
+	margin: 30px 0;
+	padding-right: 50px;
+	font-weight: 400;
+	line-height: 2;
+	text-align: justify;
+	text-indent: 100px;
+}
+/* END CONTENT */
+
+/* BUTTON */
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color 0.15 ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-outline {
+	border-radius: 30px;
+	color: #ffff;
+	border-color: #ffff;
+	padding: 12px 30px;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+}
+.btn-outline:hover {
+	background: #ffff;
+	color: #6730e3;
+}
+/* END BUTTON */
+/* SOCIAL LINKS */
+.social-links {
+	padding: 20px;
+	margin-top: 70px;
+}
+.social-links ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+.btn-social {
+	padding: 10px 25px;
+	border: none;
+	border-radius: 20px;
+}
+.bg-fb {
+	background-color: #4267b2;
+}
+.bg-yt {
+	background-color: #ff0000;
+}
+.bg-ig {
+	background-color: #c13584;
+}
+.btn-social.bg-fb:hover {
+	font-size: 20px;
+	font-weight: bolder;
+	box-shadow: 0 0 5px rgb(53, 13, 230), 0 0 25px rgb(51, 12, 228),
+		0 0 50px rgb(47, 4, 240), 0 0 100px rgb(93, 6, 233),
+		0 0 200px rgb(73, 12, 241);
+	transition: all 0.3s ease 0s;
+}
+.btn-social.bg-yt:hover {
+	font-size: 20px;
+	font-weight: bolder;
+	box-shadow: 0 0 5px rgb(252, 5, 5), 0 0 25px rgb(247, 6, 6),
+		0 0 50px rgb(235, 11, 11), 0 0 100px rgb(250, 6, 26),
+		0 0 200px rgb(243, 6, 6);
+	transition: all 0.3s ease 0s;
+}
+.btn-social.bg-ig:hover {
+	font-size: 20px;
+	font-weight: bolder;
+	box-shadow: 0 0 5px rgb(245, 8, 166), 0 0 25px rgb(228, 12, 181),
+		0 0 50px rgb(247, 10, 148), 0 0 100px rgb(240, 15, 146),
+		0 0 200px rgb(240, 7, 189);
+	transition: all 0.3s ease 0s;
+}
+/* END SOCIAL LINKS */

@@ -1,0 +1,20 @@
+.animation {
+	animation: colorchange;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+	0% {
+		color: rgb(241, 7, 7);
+	}
+	25% {
+		color: rgb(227, 243, 5);
+	}
+	50% {
+		color: rgb(11, 7, 233);
+	}
+	100% {
+		color: rgb(238, 9, 238);
+	}
+}
